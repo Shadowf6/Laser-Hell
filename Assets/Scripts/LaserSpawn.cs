@@ -1,27 +1,29 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
-using Laser;
 
 public class LaserSpawn : MonoBehaviour
 {
+    public GameObject laser;
+    private int n = 1;
+
     void Start()
     {
-        for (int i = 1; i <= 60; i++)
-        {
-            var n = (int)Math.Ceiling((double)i / 3);
-
-            for (int j = 0; j < n; j++)
-            {
-                randomDirection(); // summonLaser(randomDirection());
-            }
-        }
+        StartCoroutine(SpawnLaser());
     }
 
-    int randomDirection()
+    IEnumerator SpawnLaser()
     {
-        return 0;
+        while (n <= 60)
+        {
+            yield return new WaitForSeconds(3f);
+
+            for (int i = 0; i < 2 * Mathf.CeilToInt(n / 3f); i++)
+            {
+                Instantiate(laser);
+                yield return new WaitForSeconds(0.1f);
+            }
+
+            n++;
+        }
     }
 }

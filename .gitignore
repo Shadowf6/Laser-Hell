@@ -5,7 +5,9 @@
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
+[Pp]ackages/
 UserSettings/
+
 
 # OS-specific
 .DS_Store
@@ -17,6 +19,8 @@ Thumbs.db
 *.unityproj
 *.sln
 *.userprefs
+.vs/
+.vsconfig
 
 # Other
 *.swp

@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|c:\\users\\iansh\\onedrive\\desktop\\project\\laser hell\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|c:\\users\\iansh\\onedrive\\desktop\\project\\laser hell\\assets\\scripts\\lasermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\assets\\scripts\\laserspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\laserspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\assets\\scripts\\lasermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lasermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,22 +32,35 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
               "ToolTip": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T21:57:26.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LaserMovement.cs",
               "DocumentMoniker": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\Assets\\Scripts\\LaserMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LaserMovement.cs",
               "ToolTip": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\Assets\\Scripts\\LaserMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\LaserMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T22:13:20.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LaserSpawn.cs",
+              "DocumentMoniker": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\Assets\\Scripts\\LaserSpawn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LaserSpawn.cs",
+              "ToolTip": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\Assets\\Scripts\\LaserSpawn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LaserSpawn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T22:15:10.74Z",
               "EditorCaption": ""
             }
           ]
