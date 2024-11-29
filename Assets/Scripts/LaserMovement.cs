@@ -12,35 +12,41 @@ public class LaserMovement : MonoBehaviour
         if (randomDirection == 1)
         {
             direction = Vector2.left;
-            transform.position = new Vector3(10f, Random.Range(-4f, 4.1f), 0);
-            transform.rotation = Quaternion.identity;
+            transform.position = new Vector3(10f, Random.Range(-4.6f, 4.7f), 0);
         }
         else if (randomDirection == 2)
         {
             direction = Vector2.right;
-            transform.position = new Vector3(-10f, Random.Range(-4f, 4.1f), 0);
-            transform.rotation = Quaternion.identity;
+            transform.position = new Vector3(-10f, Random.Range(-4.6f, 4.7f), 0);
         }
         else if (randomDirection == 3)
         {
-            direction = Vector2.up;
-            transform.position = new Vector3(Random.Range(-8f, 8.1f), -5.9f, 0);
             transform.rotation = Quaternion.Euler(0, 0, 90);
+            direction = Vector2.right;
+            transform.position = new Vector3(Random.Range(-8.5f, 8.6f), -5.9f, 0);
         }
-        else
+        else if (randomDirection == 4)
         {
-            direction = Vector2.down;
-            transform.position = new Vector3(Random.Range(-8f, 8.1f), 5.9f, 0);
-            transform.rotation = Quaternion.Euler(0, 0, -90);
+            transform.rotation = Quaternion.Euler(0, 0, 90);
+            direction = Vector2.left;
+            transform.position = new Vector3(Random.Range(-8.5f, 8.6f), 5.9f, 0);
         }
     }
         
     void Update()
     {
-        transform.Translate(speed * Time.deltaTime * direction);
+        transform.Translate(direction * speed * Time.deltaTime);
         Vector3 pos = transform.position;
 
         if (pos.x < -10f || pos.x > 10f || pos.y < -6f || pos.y > 6f)
+        {
+            Destroy(gameObject, 0.1f);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D obj)
+    {
+        if (obj.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject, 0.1f);
         }

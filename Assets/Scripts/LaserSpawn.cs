@@ -13,17 +13,21 @@ public class LaserSpawn : MonoBehaviour
 
     IEnumerator SpawnLaser()
     {
-        while (n <= 60)
+        while (n <= 20)
         {
             yield return new WaitForSeconds(3f);
-
-            for (int i = 0; i < 2 * Mathf.CeilToInt(n / 3f); i++)
-            {
-                Instantiate(laser);
-                yield return new WaitForSeconds(0.1f);
-            }
+            StartCoroutine(Lasers(n));
 
             n++;
+        }
+    }
+
+    IEnumerator Lasers(int n)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            Instantiate(laser);
+            yield return new WaitForSeconds(0.5f);
         }
     }
 }
