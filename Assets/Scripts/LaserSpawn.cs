@@ -4,6 +4,7 @@ using UnityEngine;
 public class LaserSpawn : MonoBehaviour
 {
     public GameObject laser;
+    public float laserDelay;
     private int n = 1;
 
     void Start()
@@ -27,7 +28,7 @@ public class LaserSpawn : MonoBehaviour
         for (int i = 0; i < n; i++)
         {
             Instantiate(laser);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(laserDelay);
         }
     }
 }

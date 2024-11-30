@@ -7,8 +7,6 @@ public class ProgressBar : MonoBehaviour
     public float countdown;
     public TextMeshProUGUI winText;
     Image progressBar;
-    
-    
     float timeLeft;
 
     void Start()

@@ -1,7 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class StartGame : MonoBehaviour
 {
-    // I don't like this very much :(
+    public string sceneName;
+
+    void Start()
+    {
+        Button button = GetComponent<Button>();
+        button.onClick.AddListener(LoadGame);
+    }
+
+    void LoadGame()
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 }
