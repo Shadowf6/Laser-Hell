@@ -1,4 +1,5 @@
-Actually kind of built like a game now??? (no way fr?)
+Simple laser hell game with shitty graphics.
+
 
 Levels:
 
@@ -8,6 +9,9 @@ Laser II - Waves of randomly spawning lasers
 
 Laser III - Lasers spawn targeting your current location
 
-Laser IV - Diddy
 
-Laser V - Mega Laser
+More coming soon!
+
+
+
+Game will release idk (probably on Steam tho (Edit: why is it $100))

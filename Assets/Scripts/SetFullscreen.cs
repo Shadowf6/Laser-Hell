@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,11 +28,11 @@ public class SetFullscreen : MonoBehaviour
     void Fullscreen()
     {
         bool fullscreen = !Screen.fullScreen;
-
         text.text = val[fullscreen ? 1 : 0];
-        Screen.fullScreen = fullscreen;
 
         options["fullscreen"] = fullscreen ? 1 : 0;
         settings.UpdateSettings(options["volume"], options["fullscreen"]);
+
+        Screen.fullScreen = fullscreen;
     }
 }

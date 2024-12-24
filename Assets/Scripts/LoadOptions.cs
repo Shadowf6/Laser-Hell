@@ -13,15 +13,12 @@ namespace Settings
             filePath = Path.Combine(Application.persistentDataPath, "options.txt");
             Dictionary<string, int> settings = new Dictionary<string, int>();
 
-            if (File.Exists(filePath))
-            {
-                string[] file = File.ReadAllLines(filePath);
+            string[] file = File.ReadAllLines(filePath);
 
-                foreach (string line in file)
-                {
-                    string[] pair = line.Split(':');
-                    settings.Add(pair[0], int.Parse(pair[1]));
-                }
+            foreach (string line in file)
+            {
+                string[] pair = line.Split(':');
+                settings.Add(pair[0], int.Parse(pair[1]));
             }
 
             return settings;
