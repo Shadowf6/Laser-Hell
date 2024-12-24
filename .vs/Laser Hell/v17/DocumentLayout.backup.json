@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|c:\\users\\iansh\\onedrive\\desktop\\project\\laser hell\\assets\\scripts\\laserspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\laserspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|c:\\users\\iansh\\onedrive\\desktop\\project\\laser hell\\assets\\scripts\\collisionchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\collisionchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|c:\\users\\iansh\\onedrive\\desktop\\project\\laser hell\\assets\\scripts\\progressbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD436B35-C0A4-7754-94DB-B96D8446E2BE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\progressbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LaserSpawn.cs",
-              "DocumentMoniker": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\Assets\\Scripts\\LaserSpawn.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LaserSpawn.cs",
-              "ToolTip": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\Assets\\Scripts\\LaserSpawn.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LaserSpawn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Title": "CollisionChecker.cs",
+              "DocumentMoniker": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\Assets\\Scripts\\CollisionChecker.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CollisionChecker.cs",
+              "ToolTip": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\Assets\\Scripts\\CollisionChecker.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CollisionChecker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T17:24:26.78Z",
+              "WhenOpened": "2024-12-23T22:36:37.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProgressBar.cs",
+              "DocumentMoniker": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\Assets\\Scripts\\ProgressBar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ProgressBar.cs",
+              "ToolTip": "C:\\Users\\iansh\\OneDrive\\Desktop\\Project\\Laser Hell\\Assets\\Scripts\\ProgressBar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ProgressBar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T22:22:18.164Z",
               "EditorCaption": ""
             }
           ]
