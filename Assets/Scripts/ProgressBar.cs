@@ -6,7 +6,7 @@ using TMPro;
 public class ProgressBar : MonoBehaviour
 {
     public float countdown;
-    public TextMeshProUGUI winText;
+    public GameObject winScreen;
     public TMP_Text percentText;
     Image progressBar;
     float timeLeft;
@@ -30,8 +30,8 @@ public class ProgressBar : MonoBehaviour
         } else
         {
             progressBar.fillAmount = 1;
-            winText.gameObject.SetActive(true);
             Time.timeScale = 0;
+            winScreen.SetActive(true);   
         }
     }
 }

@@ -14,4 +14,4 @@ More coming soon!
 
 
 
-Game will release idk (probably on Steam tho (Edit: why is it $100))
+Game will release idk (Why does it cost $100 to host a steam game)
