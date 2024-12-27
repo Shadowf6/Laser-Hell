@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HomingLaser : MonoBehaviour
@@ -7,10 +5,11 @@ public class HomingLaser : MonoBehaviour
     public float speed;
     private Vector2 direction;
     private GameObject player;
+    int randomDirection;
 
     void Start()
     {
-        int randomDirection = Random.Range(1, 5);
+        randomDirection = Random.Range(1, 5);
         player = GameObject.Find("Player");
 
         float x = player.transform.position.x;
@@ -42,7 +41,15 @@ public class HomingLaser : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(direction * speed * Time.deltaTime);
+        if (randomDirection == 3 || randomDirection == 4)
+        {
+            transform.Translate(direction * speed * 0.75f * Time.deltaTime);
+        }
+        else
+        {
+            transform.Translate(direction * speed * Time.deltaTime);
+        }
+
         Vector3 pos = transform.position;
 
         if (pos.x < -10f || pos.x > 10f || pos.y < -6f || pos.y > 6f)

@@ -712,6 +712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laser: {fileID: 3010333362041052926, guid: ec2c63abec864e6479f55d3b658a570a, type: 3}
   laserDelay: 0.5
+  laserMultiplier: 1
 --- !u!114 &206602569
 MonoBehaviour:
   m_ObjectHideFlags: 0

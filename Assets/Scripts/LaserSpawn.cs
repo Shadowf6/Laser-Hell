@@ -1,11 +1,11 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class LaserSpawn : MonoBehaviour
 {
     public GameObject laser;
     public float laserDelay;
+    public float laserMultiplier;
     private int n = 1;
 
     void Start()
@@ -26,7 +26,7 @@ public class LaserSpawn : MonoBehaviour
 
     IEnumerator Lasers(int n)
     {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < (int)(laserMultiplier * n); i++)
         {
             Instantiate(laser);
             yield return new WaitForSeconds(laserDelay);
