@@ -1,14 +1,23 @@
 using UnityEngine;
-using TMPro;
 
 public class LaserCollision : MonoBehaviour
 {
     public GameObject loseScreen;
-    private int hits = 0;
+    AudioSource hit;
+    int hits = 0;
 
+    void Start()
+    {
+        hit = GetComponent<AudioSource>();
+    }
     void OnCollisionEnter2D(Collision2D obj)
     {
-        if (obj.gameObject.CompareTag("Projectile")) hits++;
+        if (obj.gameObject.CompareTag("Projectile"))
+        {
+            hits++;
+            hit.Play();
+
+        }
 
         if (hits == 3)
         {
