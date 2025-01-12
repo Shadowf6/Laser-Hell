@@ -20,6 +20,7 @@ Thumbs.db
 *.sln
 *.userprefs
 .vs/
+.vs
 .vsconfig
 
 # Other
