@@ -12,12 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels.unity
     guid: 81b80ec68c51c38409afa01997a8abf7
   - enabled: 1
-    path: Assets/Scenes/Laser1.unity
+    path: Assets/Scenes/Levels/Laser1.unity
     guid: d6ed804777dda4145bb78ec7f200fcbf
   - enabled: 1
-    path: Assets/Scenes/Laser2.unity
+    path: Assets/Scenes/Levels/Laser2.unity
     guid: 6db73f0e475da44409d0c09e3d478864
   - enabled: 1
-    path: Assets/Scenes/Laser3.unity
+    path: Assets/Scenes/Levels/Laser3.unity
     guid: 4e4b1e8206ae31642b09c99ff5c1188a
   m_configObjects: {}
