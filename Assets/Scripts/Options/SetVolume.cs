@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -6,10 +6,7 @@ using Settings;
 
 public class SetVolume : MonoBehaviour
 {
-
     public TMP_Text volumeText;
-    LoadOptions settings;
-    Dictionary<string, int> options;
     Slider slider;
 
     void Start()
@@ -17,16 +14,13 @@ public class SetVolume : MonoBehaviour
         slider = GetComponent<Slider>();
         slider.onValueChanged.AddListener(ChangeVolume);
 
-        settings = new LoadOptions();
-        options = settings.GetSettings();
-
-        slider.value = options["volume"];
+        slider.value = LoadOptions.GetSetting("volume");
         volumeText.text = slider.value.ToString();
     }
 
     void ChangeVolume(float value)
     {
         volumeText.text = ((int)value).ToString();
-        settings.UpdateSettings((int)value, options["fullscreen"]);
+        LoadOptions.UpdateSetting("volume", (int)value);
     }
 }

@@ -6,43 +6,49 @@ namespace Settings
 {
     public class LoadOptions : MonoBehaviour
     {
-        string filePath;
-
-        public Dictionary<string, int> GetSettings()
+        static Dictionary<string, int> GetSettings()
         {
-            filePath = Path.Combine(Application.persistentDataPath, "options.txt");
             Dictionary<string, int> settings = new Dictionary<string, int>();
-
-            string[] file = File.ReadAllLines(filePath);
+            string[] file = File.ReadAllLines(Path.Combine(Application.persistentDataPath, "options.txt"));
 
             foreach (string line in file)
             {
                 string[] pair = line.Split(':');
-                settings.Add(pair[0], int.Parse(pair[1]));
+                settings.Add(pair[0], int.Parse(pair[1]));  
             }
 
             return settings;
         }
 
-        public void UpdateSettings(int volume, int fullscreen)
+        public static int GetSetting(string setting)
         {
-            string[] newSettings = new string[]
-            {
-                "volume:" + volume,
-                "fullscreen:" + fullscreen
-            };
-
-            File.WriteAllLines(filePath, newSettings);
+            return GetSettings()[setting];
         }
 
-        public void CreateOptionsFile()
+        public static void UpdateSetting(string setting, int val)
+        {
+            var prev = GetSettings();
+            prev[setting] = val;
+            List<string> settingsList = new List<string>();
+
+            foreach (var pair in prev) 
+            { 
+                settingsList.Add(pair.Key + ":" + pair.Value);       
+            }
+
+            string[] newSettings = settingsList.ToArray();
+            File.WriteAllLines(Path.Combine(Application.persistentDataPath, "options.txt"), newSettings);
+        }
+
+        public static void CreateOptionsFile()
         {
             string[] defaultSettings = new string[] {
                 "volume:100",
-                "fullscreen:0"
+                "fullscreen:0",
+                "skin:0"
             };
 
-            File.WriteAllLines(filePath, defaultSettings);
+            File.WriteAllLines(Path.Combine(Application.persistentDataPath, "options.txt"), defaultSettings);
         }
     }
 }

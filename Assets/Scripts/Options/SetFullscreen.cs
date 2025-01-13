@@ -8,8 +8,6 @@ using Settings;
 public class SetFullscreen : MonoBehaviour
 {
     TextMeshProUGUI text;
-    LoadOptions settings;
-    Dictionary<string, int> options;
     List<string> val;
 
     void Start()
@@ -18,11 +16,8 @@ public class SetFullscreen : MonoBehaviour
         Button button = GetComponent<Button>();
         button.onClick.AddListener(Fullscreen);
 
-        settings = new LoadOptions();
-        options = settings.GetSettings();
-
         val = new List<string>() { "Enter Fullscreen", "Exit Fullscreen" };
-        text.text = val[options["fullscreen"]];
+        text.text = LoadOptions.GetSetting("fullscreen").ToString();
     }
 
     void Fullscreen()
@@ -30,9 +25,7 @@ public class SetFullscreen : MonoBehaviour
         bool fullscreen = !Screen.fullScreen;
         text.text = val[fullscreen ? 1 : 0];
 
-        options["fullscreen"] = fullscreen ? 1 : 0;
-        settings.UpdateSettings(options["volume"], options["fullscreen"]);
-
+        LoadOptions.UpdateSetting("fullscreen", fullscreen ? 1 : 0);
         Screen.fullScreen = fullscreen;
     }
 }
