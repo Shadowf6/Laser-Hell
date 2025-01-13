@@ -16,7 +16,7 @@ public class LoadPlayerSkin : MonoBehaviour
     void AssignSkin()
     {
         int skin = LoadOptions.GetSetting("skin");
-        Sprite skinSprite = Resources.Load<Sprite>("Sprites/" + skin.ToString());
+        Sprite skinSprite = Resources.Load<Sprite>("Sprites/Player/" + skin.ToString());
         sprite.sprite = skinSprite;
 
         switch (skin)
@@ -24,7 +24,7 @@ public class LoadPlayerSkin : MonoBehaviour
             case 0:
                 player.transform.localScale = new Vector3(1f, 1f, 1f); break;
             case 1:
-                player.transform.localScale = new Vector3(2f, 2f, 2f); break;
+                player.transform.localScale = new Vector3(1.9f, 1.9f, 1.9f); break;
         }
     }
 }
