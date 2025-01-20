@@ -3,7 +3,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour 
 {
     public float maxSpeed;
-    private Vector2 velocity, input;
+    public Animator animator;
+    Vector2 velocity, input;
 
     void Start() 
     {
@@ -35,5 +36,6 @@ public class PlayerMovement : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, -4.7f, 4.7f);
 
         transform.position = pos;
+        animator.SetFloat("Speed", velocity.magnitude);
     }
 }

@@ -774,6 +774,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 8
+  animator: {fileID: 1858602887}
+--- !u!95 &1858602887 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9112091487702084842, guid: e6e91eded5676054796edddf3fecf508, type: 3}
+  m_PrefabInstance: {fileID: 2531050682395646916}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2096878846
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +896,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6013918671332187773, guid: e6e91eded5676054796edddf3fecf508, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ba1be818be0c1e64a84281ba645bd005, type: 3}
     - target: {fileID: 6574724391983509193, guid: e6e91eded5676054796edddf3fecf508, type: 3}
       propertyPath: m_Volume
       value: 0.6
